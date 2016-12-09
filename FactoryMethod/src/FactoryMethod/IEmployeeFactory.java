@@ -4,6 +4,7 @@
 
 package FactoryMethod;
 public interface IEmployeeFactory {
-    /*Return Correct Employee Type According To Info*/
+
+    /*Get Correct Employee Type According To Info*/
     public IEmployee GetEmployee (String Info);
 }

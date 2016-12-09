@@ -3,11 +3,17 @@
  */
 
 package FactoryMethod;
+
+import java.util.List;
+
 public class TeamLeader extends IEmployee {
+
     public TeamLeader() {
-        setSex("None");
-        setName("None");
-        setAge(0);
+        Init();
+    }
+
+    public void Roles(List<String> roles) {
+
     }
 
     @Override

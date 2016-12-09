@@ -3,11 +3,17 @@
  */
 
 package FactoryMethod;
+
+import java.util.List;
+
 public class Developer extends IEmployee {
+
     public Developer() {
-        setSex("None");
-        setName("None");
-        setAge(0);
+        Init();
+    }
+
+    public void Tasks(List<String> tasks) {
+
     }
 
     @Override

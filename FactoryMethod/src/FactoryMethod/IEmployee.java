@@ -4,8 +4,6 @@
 
 package FactoryMethod;
 public abstract class IEmployee {
-    /*Name property*/
-    private String Name;
 
     public String getName() {
         return Name;
@@ -14,8 +12,22 @@ public abstract class IEmployee {
     public void setName(String name) {
         Name = name;
     }
-    /*Sex property*/
-    private String Sex;
+
+    public String getDepartment() {
+        return Department;
+    }
+
+    public void setDepartment(String department) {
+        Department = department;
+    }
+
+    public double getSalary() {
+        return Salary;
+    }
+
+    public void setSalary(double salary) {
+        Salary = salary;
+    }
 
     public String getSex() {
         return Sex;
@@ -24,8 +36,6 @@ public abstract class IEmployee {
     public void setSex(String sex) {
         Sex = sex;
     }
-    /*Age property*/
-    private int Age;
 
     public int getAge() {
         return Age;
@@ -33,5 +43,29 @@ public abstract class IEmployee {
 
     public void setAge(int age) {
         Age = age;
+    }
+
+    /*Sex property*/
+    private String Sex;
+
+    /*Name property*/
+    private String Name;
+
+    /*Age property*/
+    private int Age;
+
+    /*Department*/
+    public String Department;
+
+    /*Salary*/
+    public double Salary;
+
+    /*init all employee properties*/
+    public void Init() {
+        setAge(0);
+        setName("None");
+        setSex("None");
+        setDepartment("None");
+        setSalary(0.0);
     }
 }

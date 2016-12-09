@@ -10,10 +10,10 @@ public class EmployeeFactory implements IEmployeeFactory {
         if (info.toLowerCase().contains("manager")) {
             return new Manager();
         }
-        else if (info.contains("developer")) {
+        else if (info.toLowerCase().contains("developer")) {
             return new Developer();
         }
-        else if (info.contains("team leader")) {
+        else if (info.toLowerCase().contains("team leader")) {
             return new TeamLeader();
         }
         else {
